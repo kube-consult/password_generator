@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+        <form action="#" method="post" id="demoForm" class="demoForm">
+            <fieldset>
+                <legend>Demo: Get Selected Options</legend>
+                <p>
+                    <select name="demoSel[]" id="demoSel" size="4" multiple>
+                        <option value="lowercase">lowercase</option>
+                        <option value="uppercase">uppercase</option>
+                        <option value="numeric">numeric</option>
+                        <option value="special">special</option>
+                    </select>
+                    <input type="submit" value="Submit" />
+                    <textarea name="display" id="display" placeholder="view select list value(s) onchange" cols="20" rows="4" readonly></textarea>
+                </p>
+            </fieldset>
+        </form>
+        <form action="javascript:submit()">
+            <textarea id="myTextArea"></textarea>
+            <input type="submit">
+          </form>
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate Password</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
